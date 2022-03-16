@@ -1,0 +1,28 @@
+### Get a list of all products
+GET http://localhost:3000/products
+
+### Create a new product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "iPhone 11 Pro Max",
+  "price": 1149
+}
+
+### Get a product by ID
+GET http://localhost:3000/products/6230e736fc2ff1e6829ede10
+
+### Update a product by ID
+PATCH http://localhost:3000/products/623148e0756c5131373b6fa7
+Content-Type: application/json
+
+{
+  "price": "200"
+}
+
+### Delete a product by ID
+DELETE http://localhost:3000/products/6231559b09661c890ebe9782
+
+### 404 route Not Found
+GET http://localhost:3000/abc
