@@ -44,6 +44,26 @@ or in development mode by
 npm run dev
 ```
 
+#### Docker
+
+Step 1: Put your credentials in the .env file.
+
+```bash
+PORT=3000
+MONGODB_URI=YOUR MONGODB URI
+DB_NAME=DATABASE NAME OF YOUR CHOICE
+DB_USER=DATABASE USER
+DB_PASS=DATABASE USER PASSWORD
+```
+
+Step 2: Build and run Docker image
+
+```bash
+docker compose build
+docker compose up
+```
+
+
 ## Author
 
 - Caleb

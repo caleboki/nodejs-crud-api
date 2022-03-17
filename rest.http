@@ -1,22 +1,22 @@
-GET http://localhost:3000
+GET http://localhost:4000
 
 ### Get a list of all products
-GET http://localhost:3000/products
+GET http://localhost:4000/products
 
 ### Create a new product
-POST http://localhost:3000/products
+POST http://localhost:4000/products
 Content-Type: application/json
 
 {
   "name": "iPhone 11 Pro Max",
-  "price": 1149
+  "price": 200
 }
 
 ### Get a product by ID
-GET http://localhost:3000/products/6230e736fc2ff1e6829ede10
+GET http://localhost:4000/products/6230e736fc2ff1e6829ede10
 
 ### Update a product by ID
-PATCH http://localhost:3000/products/623148e0756c5131373b6fa7
+PATCH http://localhost:4000/products/623148e0756c5131373b6fa7
 Content-Type: application/json
 
 {
