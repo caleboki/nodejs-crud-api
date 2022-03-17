@@ -11,6 +11,10 @@ app.use(express.json())
 //Initialize DB
 require('./initDB')()
 
+app.get('/', (req, res, next) => {
+  res.json({ message: 'It works...', env_name: process.env.NAME})
+})
+
 
 
 const ProductRoute = require('./Routes/Product.route')
