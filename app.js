@@ -2,14 +2,18 @@ const express = require('express')
 const createError = require('http-errors')
 const dotenv = require('dotenv').config()
 
-console.log(dotenv.parsed)
+const cors=require('cors');
 
-const app = express()
+console.log(dotenv.parsed);
 
-app.use(express.json())
+const app = express();
+
+app.use(express.json());
 
 //Initialize DB
-require('./initDB')()
+require('./initDB')();
+
+app.use(cors())
 
 app.get('/', (req, res, next) => {
   res.json({ message: 'It works...', env_name: process.env.NAME})
